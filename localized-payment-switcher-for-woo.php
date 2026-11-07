@@ -40,3 +40,12 @@ add_action( 'admin_init', function() {
         deactivate_plugins( plugin_basename( __FILE__ ) );
     }
 } );
+
+/**
+ * Declare compatibility with WooCommerce features (e.g., HPOS).
+ */
+add_action( 'before_woocommerce_init', function() {
+    if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+    }
+} );
