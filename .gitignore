@@ -1,0 +1,14 @@
+# Installed development dependencies.
+/vendor/
+
+# PHPUnit and PHPCS generated files.
+/.phpunit.cache/
+/.phpunit.result.cache
+/.phpcs-cache
+/coverage/
+
+# Local IDE and operating system files.
+/.vscode/
+/.idea/
+.DS_Store
+Thumbs.db

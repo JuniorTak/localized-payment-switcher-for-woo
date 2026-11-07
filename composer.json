@@ -1,0 +1,7 @@
+{
+    "require-dev": {
+        "php-stubs/woocommerce-stubs": "^11.2",
+        "phpunit/phpunit": "^9.5",
+        "yoast/phpunit-polyfills": "^4.0"
+    }
+}
